@@ -12,8 +12,7 @@ export class PrismaAccountUser implements AccountUserRepository {
             const existing = await this.prisma.accountUser.findUnique({
                 where: { email: user.email.toLowerCase() },
             });
-
-            if (existing) {
+            if (existing && existing.id) {
                 throw new HttpException(`EL correo ${user.email} ya existe`, HttpStatus.CONFLICT);
             }
 
