@@ -258,8 +258,6 @@ Authorization: Bearer {accessToken}
 ## 🚧 Pendiente
 
 * Endpoint para carga masiva desde Excel
-* Cargas automaticas de logs
-* Auditoría automática desde triggers SQL
 
 ---
 
